@@ -1,0 +1,195 @@
+
+
+/*=========sidemenu========*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(/image/mt.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+}
+
+nav{
+   display: flex;
+   padding: 2% 6%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+nav a{
+ 
+   font-size: 25px;
+   text-decoration: none;
+   color: #fff;
+}
+
+nav a i{
+   color: red;
+   font-size: 31px;
+}
+
+.nav-links{
+   flex: 1;
+   text-align: right;
+
+}
+
+.nav-links ul li{
+   list-style: none;
+   display: inline-block;
+   padding: 8px 12px ;
+   position: relative;
+}
+
+.nav-links ul li a{
+   color: white;
+   text-decoration: none;
+   font-size: 13px;
+}
+
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 3px;
+   background: #f44336;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+   width: 100%;
+}
+
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+
+.text-box h1{
+   font-size: 63px;
+}
+
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 15px;
+   color: #fff;
+}
+
+.hero-btn{
+   display: inline-block;
+   text-decoration: none;
+   color: #fff;
+   border: 1px solid #fff;
+   padding: 12px 35px;
+   font-size: 13px;
+   background: transparent;
+   position: relative;
+   cursor: pointer;
+}
+
+.hero-btn:hover{
+   border: 1px solid #f44336 ;
+   background: #f44336;
+   transition: 1s;
+}
+
+nav .icn{
+   display: none;
+}
+
+
+@media(max-width: 700px){
+   .text-box h1{
+       font-size: 21px;
+   }
+
+   .nav-links ul li{
+       display: block;
+   }
+
+   .nav-links{
+       position: fixed;
+       background: rgb(58, 56, 56);
+       height: 91vh;
+       width: 271px;
+       top: 0;
+       left: -271px;
+       text-align: left;
+       z-index: 2;
+       transition: 1s;
+   }
+
+   nav .iicn{
+    position: relative;
+    left: 215px;
+    top: -21px;
+    
+   }
+
+   nav .fa-solid{
+       display: block;
+       color: #fff;
+       margin: 11px;
+       font-size: 22px;
+       cursor: pointer;
+
+   }
+
+   .nav-links ul{
+       padding: 31px;
+   }
+
+   nav .icn{
+      color: white !important;
+   }
+
+   nav .fa-solid{
+       color: red;
+       display: inline;
+       font-size: 31px;
+
+   }
+
+
+   .about-app{
+    height: 201px;
+    width: 271px;
+    background: rgb(129, 59, 205);
+   }
+
+   .about-app .book{
+    position: relative;
+    top: 31px;
+    left: -31px;
+    font-size: 71px;
+    color:aqua;
+   }
+
+
+   .texxt{
+    position: relative;
+    top: 51px;
+    left: 21px;
+    color: #fff;
+   }
+
+   .texxt .poc{
+      font-size: 21px;
+   }
+}
